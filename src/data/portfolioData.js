@@ -8,8 +8,8 @@ export const portfolioData = {
     links: {
       github: "https://github.com/Raju84311",
       linkedin: "https://linkedin.com/in/narasimharaju1",
-      softwareResume: "/software_resume.pdf",
-      cyberResume: "/cybersecurity_resume.pdf"
+      softwareResume: "/portfolio/software_resume.pdf",
+      cyberResume: "/portfolio/cybersecurity_resume.pdf"
     }
   },
 
