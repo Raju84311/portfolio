@@ -13,7 +13,7 @@ export default function Skills() {
       }}
     >
       <h2 style={{ fontSize: "2.2rem", marginBottom: "2rem" }}>
-        Skills
+        Cybersecurity & Technical Skills
       </h2>
 
       <div

@@ -80,19 +80,11 @@ export default function Hero() {
         </a>
 
         <a
-          href={hero.links.softwareResume}
-          download
-          className="btn btn-primary"
-        >
-          Software Resume
-        </a>
-
-        <a
           href={hero.links.cyberResume}
           download
           className="btn btn-outline"
         >
-          Cyber Resume
+          Resume
         </a>
       </div>
     </motion.section>

@@ -1,40 +1,55 @@
 export const portfolioData = {
   hero: {
     name: "S B Narasimha Raju",
-    role: "Software Engineer | Python Developer | Full Stack & Mobile App Developer | Cybersecurity-Focused",
+    role:
+      "Cybersecurity Analyst | SOC Operations | Threat Detection | Incident Response | Vulnerability Assessment",
     location: "Mysore, Karnataka, India",
     summary:
-      "I design and develop scalable web and mobile applications with a strong focus on clean architecture, performance, and reliability. MCA graduate with a background in cybersecurity, bringing a security-aware approach to software development through secure coding practices, basic threat awareness, and robust system design. Experienced in Python development, full-stack applications, React Native mobile apps, and database-driven systems.",
+      "Entry-level Cybersecurity Analyst with hands-on experience in Security Operations (SOC), threat detection, vulnerability assessment, and web application security. Skilled in analyzing network traffic, identifying malicious activity, and investigating security events using tools such as Wireshark, Nmap, Splunk, Burp Suite, and ELK Stack. Experienced in penetration testing, identifying vulnerabilities like SQL Injection and XSS, and documenting remediation strategies. Strong foundation in network security, incident response concepts, and secure system monitoring with a focus on protecting systems and identifying cyber threats.",
+
     links: {
       github: "https://github.com/Raju84311",
       linkedin: "https://linkedin.com/in/narasimharaju1",
-      softwareResume: "/portfolio/software_resume.pdf",
-      cyberResume: "/portfolio/cybersecurity_resume.pdf"
+      cyberResume: "cybersecurity_resume.pdf"
     }
   },
 
   skills: {
-    programming: ["Python", "Java", "C", "SQL"],
-    webMobile: ["HTML", "CSS", "JavaScript", "React Native"],
-    cybersecurity: [
-      "SOC Operations",
-      "Threat Detection",
-      "Incident Response",
-      "Vulnerability Assessment",
-      "Penetration Testing",
-      "IAM"
-    ],
-    tools: [
-      "MySQL",
-      "Git",
-      "Wireshark",
-      "Nmap",
-      "Splunk",
-      "ELK Stack",
-      "Burp Suite",
-      "Metasploit"
-    ]
-  },
+  cybersecurity: [
+    "SOC Operations",
+    "Threat Detection",
+    "Incident Response",
+    "Vulnerability Assessment",
+    "Penetration Testing",
+    "IAM"
+  ],
+
+  tools: [
+  "Wireshark",
+  "Nmap",
+  "Splunk",
+  "ELK Stack",
+  "Burp Suite",
+  "Metasploit",
+  "SQLmap",
+  "Network Traffic Analysis",
+  "Log Analysis"
+],
+
+  programming: [
+    "Python",
+    "Java",
+    "C",
+    "SQL"
+  ],
+
+  webMobile: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React Native"
+  ]
+},
 
   softwareProjects: [
     {
@@ -83,42 +98,42 @@ export const portfolioData = {
     }
   ],
 
-  cyberProjects: [
-    {
-      title: "SOC Log Monitoring & Threat Detection System",
-      tools: "Wireshark, Splunk, ELK Stack, Nmap",
-      description:
-        "Developed a SOC system to monitor logs, detect anomalies, and identify cyber threats in real time.",
-      attacksDetected: [
-        "Brute-force attacks",
-        "Malware activity",
-        "Unauthorized access attempts"
-      ]
-    },
-    {
-      title: "Web Application Penetration Testing",
-      tools: "Nmap, Burp Suite, SQLmap, DVWA",
-      description:
-        "Performed penetration testing to identify and document critical web vulnerabilities.",
-      vulnerabilities: [
-        "SQL Injection",
-        "Cross-Site Scripting (XSS)",
-        "Security misconfigurations"
-      ]
-    },
-    {
-      title: "Tata Cybersecurity Analyst Job Simulation",
-      tools: "IAM, SOC workflows",
-      description:
-        "Simulated real-world cybersecurity analyst tasks aligned with enterprise security practices.",
-      highlights: [
-        "IAM implementation",
-        "Security documentation",
-        "Risk assessment",
-        "Business-aligned security decisions"
-      ]
-    }
-  ],
+cyberProjects: [
+  {
+    title: "SOC Log Monitoring & Threat Detection System",
+    tools: "Wireshark, Splunk, ELK Stack, Nmap",
+    description:
+      "Built a Security Operations Center (SOC) style monitoring environment to analyze logs, detect anomalies, and identify potential cyber threats in real time.",
+    attacksDetected: [
+      "Brute-force login attacks",
+      "Malware-related suspicious activity",
+      "Unauthorized access attempts"
+    ]
+  },
+  {
+    title: "Web Application Penetration Testing (DVWA Lab)",
+    tools: "Nmap, Burp Suite, SQLmap, DVWA",
+    description:
+      "Performed security testing on a vulnerable web application to identify critical vulnerabilities and demonstrate real-world exploitation techniques.",
+    vulnerabilities: [
+      "SQL Injection",
+      "Cross-Site Scripting (XSS)",
+      "Security misconfiguration vulnerabilities"
+    ]
+  },
+  {
+    title: "Identity & Access Management Security Simulation",
+    tools: "IAM, SOC workflows",
+    description:
+      "Completed a cybersecurity analyst simulation focused on identity and access management controls and enterprise security workflows.",
+    highlights: [
+      "IAM implementation concepts",
+      "Security documentation and reporting",
+      "Risk assessment and mitigation",
+      "Business-aligned security decision making"
+    ]
+  }
+],
 
   education: [
     {
