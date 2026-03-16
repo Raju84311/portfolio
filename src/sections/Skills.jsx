@@ -1,9 +1,7 @@
 import { portfolioData } from "../data/portfolioData";
 
 export default function Skills() {
-  const skills = portfolioData.skills;
-
-  if (!skills) return null;
+  const skills = portfolioData.skills || {};
 
   return (
     <section
@@ -25,22 +23,22 @@ export default function Skills() {
       >
         <div className="card">
           <h3>Cybersecurity</h3>
-          <p>{skills.cybersecurity.join(", ")}</p>
+          <p>{(skills.cybersecurity || []).join(", ")}</p>
         </div>
 
         <div className="card">
           <h3>Security Tools</h3>
-          <p>{skills.tools.join(", ")}</p>
+          <p>{(skills.tools || []).join(", ")}</p>
         </div>
 
         <div className="card">
           <h3>Programming</h3>
-          <p>{skills.programming.join(", ")}</p>
+          <p>{(skills.programming || []).join(", ")}</p>
         </div>
 
         <div className="card">
           <h3>Web & Mobile</h3>
-          <p>{skills.webMobile.join(", ")}</p>
+          <p>{(skills.webMobile || []).join(", ")}</p>
         </div>
       </div>
     </section>
