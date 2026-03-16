@@ -1,4 +1,5 @@
-import { SiWireshark, SiNmap, SiBurpsuite, SiSplunk, SiElastic, SiMetasploit } from "react-icons/si";
+import { SiWireshark, SiSplunk } from "react-icons/si";
+import { FaNetworkWired, FaBug, FaDatabase, FaShieldAlt } from "react-icons/fa";
 import { portfolioData } from "../data/portfolioData";
 
 export default function Skills() {
@@ -17,7 +18,7 @@ export default function Skills() {
         Cybersecurity & Technical Skills
       </h2>
 
-      {/* Existing Skills Grid */}
+      {/* Skills Grid */}
       <div
         style={{
           display: "grid",
@@ -50,7 +51,7 @@ export default function Skills() {
         </div>
       </div>
 
-      {/* Security Tools Icons Section */}
+      {/* Security Tools Icons */}
 
       <h3 style={{ marginTop: "3rem", marginBottom: "1rem" }}>
         Security Tools
@@ -69,7 +70,7 @@ export default function Skills() {
         </div>
 
         <div className="card" style={{ textAlign: "center" }}>
-          <SiNmap size={40} />
+          <FaNetworkWired size={40} />
           <p>Nmap</p>
         </div>
 
@@ -79,21 +80,20 @@ export default function Skills() {
         </div>
 
         <div className="card" style={{ textAlign: "center" }}>
-          <SiBurpsuite size={40} />
+          <FaBug size={40} />
           <p>Burp Suite</p>
         </div>
 
         <div className="card" style={{ textAlign: "center" }}>
-          <SiElastic size={40} />
+          <FaDatabase size={40} />
           <p>ELK Stack</p>
         </div>
 
         <div className="card" style={{ textAlign: "center" }}>
-          <SiMetasploit size={40} />
+          <FaShieldAlt size={40} />
           <p>Metasploit</p>
         </div>
       </div>
-
     </section>
   );
 }
