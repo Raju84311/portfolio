@@ -14,27 +14,33 @@ export const portfolioData = {
     }
   },
 
-  skills: {
-  cybersecurity: [
-    "SOC Operations",
-    "Threat Detection",
-    "Incident Response",
+skills: {
+  securityDomains: [
+    "Security Operations Center (SOC)",
+    "Threat Detection & Analysis",
+    "Incident Response Fundamentals",
     "Vulnerability Assessment",
-    "Penetration Testing",
-    "IAM"
+    "Web Application Security",
+    "Network Security Monitoring"
   ],
 
-  tools: [
-  "Wireshark",
-  "Nmap",
-  "Splunk",
-  "ELK Stack",
-  "Burp Suite",
-  "Metasploit",
-  "SQLmap",
-  "Network Traffic Analysis",
-  "Log Analysis"
-],
+  securityTools: [
+    "Wireshark",
+    "Nmap",
+    "Splunk",
+    "ELK Stack",
+    "Burp Suite",
+    "Metasploit",
+    "SQLmap"
+  ],
+
+  analysisSkills: [
+    "Network Traffic Analysis",
+    "Log Analysis",
+    "Attack Pattern Identification",
+    "Security Event Investigation",
+    "Alert Severity Classification"
+  ],
 
   programming: [
     "Python",
@@ -43,12 +49,13 @@ export const portfolioData = {
     "SQL"
   ],
 
-  webMobile: [
+  webTechnologies: [
     "HTML",
     "CSS",
     "JavaScript",
     "React Native"
   ]
+
 },
 
   softwareProjects: [
@@ -102,30 +109,57 @@ cyberProjects: [
   {
     title: "SOC Log Monitoring & Threat Detection System",
     tools: "Wireshark, Splunk, ELK Stack, Nmap",
+    image: "soc-dashboard.png",
+
     description:
-      "Built a Security Operations Center (SOC) style monitoring environment to analyze logs, detect anomalies, and identify potential cyber threats in real time.",
+      "Built a Security Operations Center (SOC) style monitoring dashboard to analyze network alerts and detect cyber threats in real time using log analysis and traffic monitoring.",
+
+    whatIDid: [
+      "Designed a SOC alerts dashboard to visualize network security events.",
+      "Monitored alert logs generated from simulated network traffic.",
+      "Classified security alerts into CRITICAL, ALERT, and INFO severity levels.",
+      "Analyzed suspicious network activity using Wireshark and log analysis.",
+      "Identified patterns indicating reconnaissance, exploitation attempts, and DoS activity."
+    ],
+
     attacksDetected: [
-      "Brute-force login attacks",
-      "Malware-related suspicious activity",
-      "Unauthorized access attempts"
+      "Denial-of-Service (DoS) attacks",
+      "Reconnaissance scans",
+      "Exploit attempts",
+      "Backdoor connection attempts",
+      "Fuzzing attacks"
+    ],
+
+    investigationWorkflow: [
+      "Detected abnormal spikes in CRITICAL alerts from network traffic logs.",
+      "Filtered alerts by severity level and protocol.",
+      "Analyzed suspicious packets using Wireshark.",
+      "Identified malicious behavior patterns such as reconnaissance scanning and exploit attempts.",
+      "Documented the incident and suggested mitigation actions."
     ]
   },
+
   {
     title: "Web Application Penetration Testing (DVWA Lab)",
     tools: "Nmap, Burp Suite, SQLmap, DVWA",
+
     description:
       "Performed security testing on a vulnerable web application to identify critical vulnerabilities and demonstrate real-world exploitation techniques.",
+
     vulnerabilities: [
       "SQL Injection",
       "Cross-Site Scripting (XSS)",
       "Security misconfiguration vulnerabilities"
     ]
   },
+
   {
     title: "Identity & Access Management Security Simulation",
     tools: "IAM, SOC workflows",
+
     description:
       "Completed a cybersecurity analyst simulation focused on identity and access management controls and enterprise security workflows.",
+
     highlights: [
       "IAM implementation concepts",
       "Security documentation and reporting",
@@ -133,6 +167,49 @@ cyberProjects: [
       "Business-aligned security decision making"
     ]
   }
+],
+
+securityLabs: [
+
+  {
+    title: "SOC Alert Investigation Lab",
+    tools: "Wireshark, Log Analysis",
+    description:
+      "Analyzed simulated SOC alerts to identify malicious activity patterns including reconnaissance scans, exploit attempts, and Denial-of-Service attacks.",
+    activities: [
+      "Analyzed alert logs generated from network traffic monitoring",
+      "Classified alerts by severity levels (CRITICAL, ALERT, INFO)",
+      "Investigated suspicious network activity using packet inspection",
+      "Identified attack patterns including DoS and reconnaissance scans"
+    ]
+  },
+
+  {
+    title: "Web Application Security Testing Lab",
+    tools: "Burp Suite, SQLmap, DVWA",
+    description:
+      "Performed penetration testing on a vulnerable web application environment to identify common security vulnerabilities.",
+    activities: [
+      "Identified SQL Injection vulnerabilities",
+      "Detected Cross-Site Scripting (XSS)",
+      "Analyzed request manipulation using Burp Suite",
+      "Documented security findings and mitigation strategies"
+    ]
+  },
+
+  {
+    title: "Network Scanning & Enumeration Lab",
+    tools: "Nmap",
+    description:
+      "Performed network reconnaissance to identify open ports, services, and potential attack surfaces.",
+    activities: [
+      "Conducted port scanning using Nmap",
+      "Identified running services on target systems",
+      "Analyzed network exposure and security risks",
+      "Documented reconnaissance findings"
+    ]
+  }
+
 ],
 
   education: [

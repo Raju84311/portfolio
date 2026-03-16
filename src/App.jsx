@@ -7,7 +7,9 @@ import Skills from "./sections/Skills";
 import Education from "./sections/Education";
 import SoftwareProjects from "./sections/SoftwareProjects";
 import CyberSecurityProjects from "./sections/CyberSecurityProjects";
+import SecurityLabs from "./sections/SecurityLabs";
 import Contact from "./sections/Contact";
+import Certifications from "./sections/Certifications";
 
 import "./styles/theme.css";
 
@@ -31,6 +33,10 @@ export default function App() {
 
         {/* CYBERSECURITY PROJECTS */}
         <Route path="/cyber" element={<CyberSecurityProjects />} />
+
+        <Route path="/security-labs" element={<SecurityLabs />} />
+
+        <Route path="/certifications" element={<Certifications />} />
 
         {/* CONTACT */}
         <Route path="/contact" element={<Contact />} />

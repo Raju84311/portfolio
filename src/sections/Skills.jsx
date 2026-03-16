@@ -1,3 +1,4 @@
+import { SiWireshark, SiNmap, SiBurpsuite, SiSplunk, SiElastic, SiMetasploit } from "react-icons/si";
 import { portfolioData } from "../data/portfolioData";
 
 export default function Skills() {
@@ -16,6 +17,7 @@ export default function Skills() {
         Cybersecurity & Technical Skills
       </h2>
 
+      {/* Existing Skills Grid */}
       <div
         style={{
           display: "grid",
@@ -47,6 +49,51 @@ export default function Skills() {
           <p>{skills.tools.join(", ")}</p>
         </div>
       </div>
+
+      {/* Security Tools Icons Section */}
+
+      <h3 style={{ marginTop: "3rem", marginBottom: "1rem" }}>
+        Security Tools
+      </h3>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
+          gap: "1.5rem"
+        }}
+      >
+        <div className="card" style={{ textAlign: "center" }}>
+          <SiWireshark size={40} />
+          <p>Wireshark</p>
+        </div>
+
+        <div className="card" style={{ textAlign: "center" }}>
+          <SiNmap size={40} />
+          <p>Nmap</p>
+        </div>
+
+        <div className="card" style={{ textAlign: "center" }}>
+          <SiSplunk size={40} />
+          <p>Splunk</p>
+        </div>
+
+        <div className="card" style={{ textAlign: "center" }}>
+          <SiBurpsuite size={40} />
+          <p>Burp Suite</p>
+        </div>
+
+        <div className="card" style={{ textAlign: "center" }}>
+          <SiElastic size={40} />
+          <p>ELK Stack</p>
+        </div>
+
+        <div className="card" style={{ textAlign: "center" }}>
+          <SiMetasploit size={40} />
+          <p>Metasploit</p>
+        </div>
+      </div>
+
     </section>
   );
 }

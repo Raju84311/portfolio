@@ -55,6 +55,10 @@ export default function Navbar() {
               View Cybersecurity Projects
             </Link>
 
+            <Link to="/security-labs">Security Labs</Link>
+
+            <Link to="/certifications">Certificates</Link>
+
             <Link
               to="/contact"
               style={styles.link}
