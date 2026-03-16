@@ -22,13 +22,18 @@ export default function Skills() {
         }}
       >
         <div className="card">
-          <h3>Cybersecurity</h3>
-          <p>{(skills.cybersecurity || []).join(", ")}</p>
+          <h3>Security Domains</h3>
+          <p>{(skills.securityDomains || []).join(", ")}</p>
         </div>
 
         <div className="card">
           <h3>Security Tools</h3>
-          <p>{(skills.tools || []).join(", ")}</p>
+          <p>{(skills.securityTools || []).join(", ")}</p>
+        </div>
+
+        <div className="card">
+          <h3>Security Analysis Skills</h3>
+          <p>{(skills.analysisSkills || []).join(", ")}</p>
         </div>
 
         <div className="card">
@@ -37,8 +42,8 @@ export default function Skills() {
         </div>
 
         <div className="card">
-          <h3>Web & Mobile</h3>
-          <p>{(skills.webMobile || []).join(", ")}</p>
+          <h3>Web Technologies</h3>
+          <p>{(skills.webTechnologies || []).join(", ")}</p>
         </div>
       </div>
     </section>
