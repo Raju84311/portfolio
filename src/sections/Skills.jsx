@@ -1,5 +1,3 @@
-import { SiWireshark, SiSplunk } from "react-icons/si";
-import { FaNetworkWired, FaBug, FaDatabase, FaShieldAlt } from "react-icons/fa";
 import { portfolioData } from "../data/portfolioData";
 
 export default function Skills() {
@@ -18,7 +16,6 @@ export default function Skills() {
         Cybersecurity & Technical Skills
       </h2>
 
-      {/* Skills Grid */}
       <div
         style={{
           display: "grid",
@@ -26,72 +23,24 @@ export default function Skills() {
           gap: "1.5rem"
         }}
       >
-        {/* Programming */}
-        <div className="card">
-          <h3>Programming</h3>
-          <p>{skills.programming.join(", ")}</p>
-        </div>
-
-        {/* Web & Mobile */}
-        <div className="card">
-          <h3>Web & Mobile</h3>
-          <p>{skills.webMobile.join(", ")}</p>
-        </div>
-
-        {/* Cybersecurity */}
         <div className="card">
           <h3>Cybersecurity</h3>
           <p>{skills.cybersecurity.join(", ")}</p>
         </div>
 
-        {/* Tools */}
         <div className="card">
-          <h3>Tools</h3>
+          <h3>Security Tools</h3>
           <p>{skills.tools.join(", ")}</p>
         </div>
-      </div>
 
-      {/* Security Tools Icons */}
-
-      <h3 style={{ marginTop: "3rem", marginBottom: "1rem" }}>
-        Security Tools
-      </h3>
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
-          gap: "1.5rem"
-        }}
-      >
-        <div className="card" style={{ textAlign: "center" }}>
-          <SiWireshark size={40} />
-          <p>Wireshark</p>
+        <div className="card">
+          <h3>Programming</h3>
+          <p>{skills.programming.join(", ")}</p>
         </div>
 
-        <div className="card" style={{ textAlign: "center" }}>
-          <FaNetworkWired size={40} />
-          <p>Nmap</p>
-        </div>
-
-        <div className="card" style={{ textAlign: "center" }}>
-          <SiSplunk size={40} />
-          <p>Splunk</p>
-        </div>
-
-        <div className="card" style={{ textAlign: "center" }}>
-          <FaBug size={40} />
-          <p>Burp Suite</p>
-        </div>
-
-        <div className="card" style={{ textAlign: "center" }}>
-          <FaDatabase size={40} />
-          <p>ELK Stack</p>
-        </div>
-
-        <div className="card" style={{ textAlign: "center" }}>
-          <FaShieldAlt size={40} />
-          <p>Metasploit</p>
+        <div className="card">
+          <h3>Web & Mobile</h3>
+          <p>{skills.webMobile.join(", ")}</p>
         </div>
       </div>
     </section>
