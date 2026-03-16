@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav style={styles.nav}>
-      {/* LEFT EMPTY SPACE */}
+      {/* LEFT SPACE */}
       <div />
 
       {/* RIGHT CONTROLS */}
@@ -31,39 +31,27 @@ export default function Navbar() {
               Skills
             </Link>
 
-            <Link
-              to="/education"
-              style={styles.link}
-              onClick={() => setOpen(false)}
-            >
+            <Link to="/education" style={styles.link} onClick={() => setOpen(false)}>
               Education
             </Link>
 
-            <Link
-              to="/software"
-              style={styles.link}
-              onClick={() => setOpen(false)}
-            >
+            <Link to="/software" style={styles.link} onClick={() => setOpen(false)}>
               View Software Projects
             </Link>
 
-            <Link
-              to="/cyber"
-              style={styles.link}
-              onClick={() => setOpen(false)}
-            >
+            <Link to="/cyber" style={styles.link} onClick={() => setOpen(false)}>
               View Cybersecurity Projects
             </Link>
 
-            <Link to="/security-labs">Security Labs</Link>
+            <Link to="/security-labs" style={styles.link} onClick={() => setOpen(false)}>
+              Security Labs
+            </Link>
 
-            <Link to="/certifications">Certificates</Link>
+            <Link to="/certifications" style={styles.link} onClick={() => setOpen(false)}>
+              Certificates
+            </Link>
 
-            <Link
-              to="/contact"
-              style={styles.link}
-              onClick={() => setOpen(false)}
-            >
+            <Link to="/contact" style={styles.link} onClick={() => setOpen(false)}>
               Contact
             </Link>
           </div>
