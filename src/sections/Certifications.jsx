@@ -20,19 +20,37 @@ export default function Certifications() {
         }}
       >
         {portfolioData.certifications.map((cert, index) => (
-          <div key={index} className="card">
-
-            {/* Image */}
+          <div
+            key={index}
+            className="card"
+            style={{
+              transition: "transform 0.3s ease",
+              cursor: "pointer"
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.transform = "translateY(-6px)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.transform = "translateY(0)")
+            }
+          >
+            {/* Clickable Image */}
             {cert.image && (
-              <img
-                src={`/portfolio/${cert.image}`}
-                alt={cert.title}
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                  marginBottom: "1rem"
-                }}
-              />
+              <a
+                href={`/portfolio/${cert.file}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={`/portfolio/${cert.image}`}
+                  alt={cert.title}
+                  style={{
+                    width: "100%",
+                    borderRadius: "10px",
+                    marginBottom: "1rem"
+                  }}
+                />
+              </a>
             )}
 
             {/* Title */}
@@ -48,6 +66,20 @@ export default function Certifications() {
               {cert.description}
             </p>
 
+            {/* Button */}
+            <a
+              href={`/portfolio/${cert.file}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+              style={{
+                marginTop: "1rem",
+                display: "inline-block",
+                textAlign: "center"
+              }}
+            >
+              View Certificate
+            </a>
           </div>
         ))}
       </div>

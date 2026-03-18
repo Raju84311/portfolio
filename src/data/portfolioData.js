@@ -232,27 +232,35 @@ certifications: [
     title: "Tata Cybersecurity Analyst Simulation",
     issuer: "Forage",
     image: "tata-cybersecurity.png",
-    description: "Completed cybersecurity analyst simulation focusing on IAM, risk analysis, and SOC workflows."
+    file: "tata-cybersecurity.pdf",
+    description:
+      "Completed cybersecurity analyst simulation focusing on IAM, risk analysis, and SOC workflows."
   },
   {
-    title: "JPMorgan Chase Cybersecurity Simulation",
+    title: "JPMorgan Chase Software Engineering Simulation",
     issuer: "Forage",
     image: "jpmorgan-simulation.png",
-    description: "Worked on real-world cybersecurity tasks including log analysis and threat detection."
+    file: "jpmorgan.pdf",
+    description:
+      "Worked on real-world cybersecurity tasks including log analysis and threat detection."
   },
   {
-    title: "Cisco Introduction to Cybersecurity",
-    issuer: "Cisco",
+    title: "Cyber Security Workshop Participation",
+    issuer: "Amrita Vishwa Vidyapeetham, Mysuru Campus",
     image: "cybersecurity-workshop.png",
-    description: "Learned fundamentals of cybersecurity, threats, vulnerabilities, and protection mechanisms."
+    file: "cisco-cybersecurity.pdf",
+    description:
+      "Participated in a one-day hands-on workshop on Cyber Security covering practical concepts and security fundamentals."
   },
   {
     title: "Certified Blockchain Security Examiner",
     issuer: "Blockchain Council",
     image: "blockchain-security.png",
-    description: "Understood blockchain security concepts, threats, and protection strategies."
+    file: "blockchain-security.pdf",
+    description:
+      "Covered blockchain security risks, attacks, and protection mechanisms."
   }
-],
+];
   contact: {
     email: "rajusbnarasimha@gmail.com",
     phone: "8431190959"
