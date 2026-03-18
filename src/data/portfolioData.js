@@ -14,49 +14,43 @@ export const portfolioData = {
     }
   },
 
-skills: {
-  securityDomains: [
-    "Security Operations Center (SOC)",
-    "Threat Detection & Analysis",
-    "Incident Response Fundamentals",
-    "Vulnerability Assessment",
-    "Web Application Security",
-    "Network Security Monitoring"
-  ],
+  skills: {
+    securityDomains: [
+      "Security Operations Center (SOC)",
+      "Threat Detection & Analysis",
+      "Incident Response Fundamentals",
+      "Vulnerability Assessment",
+      "Web Application Security",
+      "Network Security Monitoring"
+    ],
 
-  securityTools: [
-    "Wireshark",
-    "Nmap",
-    "Splunk",
-    "ELK Stack",
-    "Burp Suite",
-    "Metasploit",
-    "SQLmap"
-  ],
+    securityTools: [
+      "Wireshark",
+      "Nmap",
+      "Splunk",
+      "ELK Stack",
+      "Burp Suite",
+      "Metasploit",
+      "SQLmap"
+    ],
 
-  analysisSkills: [
-    "Network Traffic Analysis",
-    "Log Analysis",
-    "Attack Pattern Identification",
-    "Security Event Investigation",
-    "Alert Severity Classification"
-  ],
+    analysisSkills: [
+      "Network Traffic Analysis",
+      "Log Analysis",
+      "Attack Pattern Identification",
+      "Security Event Investigation",
+      "Alert Severity Classification"
+    ],
 
-  programming: [
-    "Python",
-    "Java",
-    "C",
-    "SQL"
-  ],
+    programming: ["Python", "Java", "C", "SQL"],
 
-  webTechnologies: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React Native"
-  ]
-
-},
+    webTechnologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React Native"
+    ]
+  },
 
   softwareProjects: [
     {
@@ -105,112 +99,110 @@ skills: {
     }
   ],
 
-cyberProjects: [
-  {
-    title: "SOC Log Monitoring & Threat Detection System",
-    tools: "Wireshark, Splunk, ELK Stack, Nmap",
-    image: "soc-dashboard.png",
+  cyberProjects: [
+    {
+      title: "SOC Log Monitoring & Threat Detection System",
+      tools: "Wireshark, Splunk, ELK Stack, Nmap",
+      image: "soc-dashboard.png",
 
-    description:
-      "Built a Security Operations Center (SOC) style monitoring dashboard to analyze network alerts and detect cyber threats in real time using log analysis and traffic monitoring.",
+      description:
+        "Built a Security Operations Center (SOC) style monitoring dashboard to analyze network alerts and detect cyber threats in real time using log analysis and traffic monitoring.",
 
-    whatIDid: [
-      "Designed a SOC alerts dashboard to visualize network security events.",
-      "Monitored alert logs generated from simulated network traffic.",
-      "Classified security alerts into CRITICAL, ALERT, and INFO severity levels.",
-      "Analyzed suspicious network activity using Wireshark and log analysis.",
-      "Identified patterns indicating reconnaissance, exploitation attempts, and DoS activity."
-    ],
+      whatIDid: [
+        "Designed a SOC alerts dashboard to visualize network security events.",
+        "Monitored alert logs generated from simulated network traffic.",
+        "Classified security alerts into CRITICAL, ALERT, and INFO severity levels.",
+        "Analyzed suspicious network activity using Wireshark and log analysis.",
+        "Identified patterns indicating reconnaissance, exploitation attempts, and DoS activity."
+      ],
 
-    attacksDetected: [
-      "Denial-of-Service (DoS) attacks",
-      "Reconnaissance scans",
-      "Exploit attempts",
-      "Backdoor connection attempts",
-      "Fuzzing attacks"
-    ],
+      attacksDetected: [
+        "Denial-of-Service (DoS) attacks",
+        "Reconnaissance scans",
+        "Exploit attempts",
+        "Backdoor connection attempts",
+        "Fuzzing attacks"
+      ],
 
-    investigationWorkflow: [
-      "Detected abnormal spikes in CRITICAL alerts from network traffic logs.",
-      "Filtered alerts by severity level and protocol.",
-      "Analyzed suspicious packets using Wireshark.",
-      "Identified malicious behavior patterns such as reconnaissance scanning and exploit attempts.",
-      "Documented the incident and suggested mitigation actions."
-    ]
-  },
+      investigationWorkflow: [
+        "Detected abnormal spikes in CRITICAL alerts from network traffic logs.",
+        "Filtered alerts by severity level and protocol.",
+        "Analyzed suspicious packets using Wireshark.",
+        "Identified malicious behavior patterns such as reconnaissance scanning and exploit attempts.",
+        "Documented the incident and suggested mitigation actions."
+      ]
+    },
 
-  {
-    title: "Web Application Penetration Testing (DVWA Lab)",
-    tools: "Nmap, Burp Suite, SQLmap, DVWA",
+    {
+      title: "Web Application Penetration Testing (DVWA Lab)",
+      tools: "Nmap, Burp Suite, SQLmap, DVWA",
 
-    description:
-      "Performed security testing on a vulnerable web application to identify critical vulnerabilities and demonstrate real-world exploitation techniques.",
+      description:
+        "Performed security testing on a vulnerable web application to identify critical vulnerabilities and demonstrate real-world exploitation techniques.",
 
-    vulnerabilities: [
-      "SQL Injection",
-      "Cross-Site Scripting (XSS)",
-      "Security misconfiguration vulnerabilities"
-    ]
-  },
+      vulnerabilities: [
+        "SQL Injection",
+        "Cross-Site Scripting (XSS)",
+        "Security misconfiguration vulnerabilities"
+      ]
+    },
 
-  {
-    title: "Identity & Access Management Security Simulation",
-    tools: "IAM, SOC workflows",
+    {
+      title: "Identity & Access Management Security Simulation",
+      tools: "IAM, SOC workflows",
 
-    description:
-      "Completed a cybersecurity analyst simulation focused on identity and access management controls and enterprise security workflows.",
+      description:
+        "Completed a cybersecurity analyst simulation focused on identity and access management controls and enterprise security workflows.",
 
-    highlights: [
-      "IAM implementation concepts",
-      "Security documentation and reporting",
-      "Risk assessment and mitigation",
-      "Business-aligned security decision making"
-    ]
-  }
-],
+      highlights: [
+        "IAM implementation concepts",
+        "Security documentation and reporting",
+        "Risk assessment and mitigation",
+        "Business-aligned security decision making"
+      ]
+    }
+  ],
 
-securityLabs: [
+  securityLabs: [
+    {
+      title: "SOC Alert Investigation Lab",
+      tools: "Wireshark, Log Analysis",
+      description:
+        "Analyzed simulated SOC alerts to identify malicious activity patterns including reconnaissance scans, exploit attempts, and Denial-of-Service attacks.",
+      activities: [
+        "Analyzed alert logs generated from network traffic monitoring",
+        "Classified alerts by severity levels (CRITICAL, ALERT, INFO)",
+        "Investigated suspicious network activity using packet inspection",
+        "Identified attack patterns including DoS and reconnaissance scans"
+      ]
+    },
 
-  {
-    title: "SOC Alert Investigation Lab",
-    tools: "Wireshark, Log Analysis",
-    description:
-      "Analyzed simulated SOC alerts to identify malicious activity patterns including reconnaissance scans, exploit attempts, and Denial-of-Service attacks.",
-    activities: [
-      "Analyzed alert logs generated from network traffic monitoring",
-      "Classified alerts by severity levels (CRITICAL, ALERT, INFO)",
-      "Investigated suspicious network activity using packet inspection",
-      "Identified attack patterns including DoS and reconnaissance scans"
-    ]
-  },
+    {
+      title: "Web Application Security Testing Lab",
+      tools: "Burp Suite, SQLmap, DVWA",
+      description:
+        "Performed penetration testing on a vulnerable web application environment to identify common security vulnerabilities.",
+      activities: [
+        "Identified SQL Injection vulnerabilities",
+        "Detected Cross-Site Scripting (XSS)",
+        "Analyzed request manipulation using Burp Suite",
+        "Documented security findings and mitigation strategies"
+      ]
+    },
 
-  {
-    title: "Web Application Security Testing Lab",
-    tools: "Burp Suite, SQLmap, DVWA",
-    description:
-      "Performed penetration testing on a vulnerable web application environment to identify common security vulnerabilities.",
-    activities: [
-      "Identified SQL Injection vulnerabilities",
-      "Detected Cross-Site Scripting (XSS)",
-      "Analyzed request manipulation using Burp Suite",
-      "Documented security findings and mitigation strategies"
-    ]
-  },
-
-  {
-    title: "Network Scanning & Enumeration Lab",
-    tools: "Nmap",
-    description:
-      "Performed network reconnaissance to identify open ports, services, and potential attack surfaces.",
-    activities: [
-      "Conducted port scanning using Nmap",
-      "Identified running services on target systems",
-      "Analyzed network exposure and security risks",
-      "Documented reconnaissance findings"
-    ]
-  }
-
-],
+    {
+      title: "Network Scanning & Enumeration Lab",
+      tools: "Nmap",
+      description:
+        "Performed network reconnaissance to identify open ports, services, and potential attack surfaces.",
+      activities: [
+        "Conducted port scanning using Nmap",
+        "Identified running services on target systems",
+        "Analyzed network exposure and security risks",
+        "Documented reconnaissance findings"
+      ]
+    }
+  ],
 
   education: [
     {
@@ -227,40 +219,41 @@ securityLabs: [
     }
   ],
 
-certifications: [
-  {
-    title: "Tata Cybersecurity Analyst Simulation",
-    issuer: "Forage",
-    image: "tata-cybersecurity.png",
-    file: "tata-cybersecurity.pdf",
-    description:
-      "Completed cybersecurity analyst simulation focusing on IAM, risk analysis, and SOC workflows."
-  },
-  {
-    title: "JPMorgan Chase Software Engineering Simulation",
-    issuer: "Forage",
-    image: "jpmorgan-simulation.png",
-    file: "jpmorgan.pdf",
-    description:
-      "Worked on real-world cybersecurity tasks including log analysis and threat detection."
-  },
-  {
-    title: "Cyber Security Workshop Participation",
-    issuer: "Amrita Vishwa Vidyapeetham, Mysuru Campus",
-    image: "cybersecurity-workshop.png",
-    file: "cisco-cybersecurity.pdf",
-    description:
-      "Participated in a one-day hands-on workshop on Cyber Security covering practical concepts and security fundamentals."
-  },
-  {
-    title: "Certified Blockchain Security Examiner",
-    issuer: "Blockchain Council",
-    image: "blockchain-security.png",
-    file: "blockchain-security.pdf",
-    description:
-      "Covered blockchain security risks, attacks, and protection mechanisms."
-  }
-];
+  certifications: [
+    {
+      title: "Tata Cybersecurity Analyst Simulation",
+      issuer: "Forage",
+      image: "tata-cybersecurity.png",
+      file: "tata-cybersecurity.pdf",
+      description:
+        "Completed cybersecurity analyst simulation focusing on IAM, risk analysis, and SOC workflows."
+    },
+    {
+      title: "JPMorgan Chase Software Engineering Simulation",
+      issuer: "Forage",
+      image: "jpmorgan-simulation.png",
+      file: "jpmorgan.pdf",
+      description:
+        "Worked on real-world cybersecurity tasks including log analysis and threat detection."
+    },
+    {
+      title: "Cyber Security Workshop Participation",
+      issuer: "Amrita Vishwa Vidyapeetham, Mysuru Campus",
+      image: "cybersecurity-workshop.png",
+      file: "cisco-cybersecurity.pdf",
+      description:
+        "Participated in a one-day hands-on workshop on Cyber Security covering practical concepts and security fundamentals."
+    },
+    {
+      title: "Certified Blockchain Security Examiner",
+      issuer: "Blockchain Council",
+      image: "blockchain-security.png",
+      file: "blockchain-security.pdf",
+      description:
+        "Covered blockchain security risks, attacks, and protection mechanisms."
+    }
+  ],
+
   contact: {
     email: "rajusbnarasimha@gmail.com",
     phone: "8431190959"
