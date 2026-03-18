@@ -20,102 +20,155 @@ export default function CyberSecurityProjects() {
         }}
       >
         {portfolioData.cyberProjects.map((project, index) => (
-          <div key={index} className="card">
-
+          <div
+            key={index}
+            className="card"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.8rem",
+              justifyContent: "space-between"
+            }}
+          >
             {/* Title */}
-            <h3>{project.title}</h3>
+            <h3 style={{ fontSize: "1.3rem", fontWeight: "600" }}>
+              {project.title}
+            </h3>
 
-            {/* Tools */}
-            <p style={{ opacity: 0.85 }}>
-              <strong>Tools:</strong> {project.tools}
-            </p>
+            {/* Tools Badge */}
+            <div
+              style={{
+                fontSize: "0.8rem",
+                padding: "4px 10px",
+                borderRadius: "20px",
+                background: "rgba(59,130,246,0.15)",
+                width: "fit-content"
+              }}
+            >
+              {project.tools}
+            </div>
 
-            {/* Image */}
+            {/* Image with SOC Badge */}
             {project.image && (
-              <img
-                src={`/${project.image}`}
-                alt={project.title}
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                  margin: "1rem 0"
-                }}
-              />
+              <div style={{ position: "relative" }}>
+                <img
+                  src={`/${project.image}`}
+                  alt={project.title}
+                  style={{
+                    width: "100%",
+                    borderRadius: "10px",
+                    marginTop: "0.5rem"
+                  }}
+                />
+
+                {/* LIVE ALERT badge */}
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "10px",
+                    left: "10px",
+                    background: "#ef4444",
+                    color: "white",
+                    padding: "4px 8px",
+                    borderRadius: "6px",
+                    fontSize: "0.7rem"
+                  }}
+                >
+                  LIVE ALERTS
+                </span>
+              </div>
             )}
 
             {/* Description */}
-            <p>{project.description}</p>
+            <p style={{ opacity: 0.9 }}>
+              {project.description}
+            </p>
+
+            <hr style={{ opacity: 0.2 }} />
 
             {/* What I Did */}
             {project.whatIDid && (
-              <>
-                <h4 style={{ marginTop: "1rem", color: "#3b82f6" }}>
-                  What I Did
-                </h4>
-                <ul>
+              <div>
+                <h4 style={{ color: "#3b82f6" }}>What I Did</h4>
+                <ul style={{ paddingLeft: "1rem" }}>
                   {project.whatIDid.map((item, i) => (
-                    <li key={i}>{item}</li>
+                    <li key={i}>✔️ {item}</li>
                   ))}
                 </ul>
-              </>
+              </div>
             )}
 
             {/* Attacks Detected */}
             {project.attacksDetected && (
-              <>
-                <h4 style={{ marginTop: "1rem", color: "#ef4444" }}>
-                  Attacks Detected
-                </h4>
-                <ul>
+              <div>
+                <h4 style={{ color: "#ef4444" }}>Attacks Detected</h4>
+                <ul style={{ paddingLeft: "1rem" }}>
                   {project.attacksDetected.map((attack, i) => (
-                    <li key={i}>{attack}</li>
+                    <li
+                      key={i}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "8px"
+                      }}
+                    >
+                      <span
+                        style={{
+                          background: "#ef4444",
+                          color: "white",
+                          padding: "3px 8px",
+                          borderRadius: "6px",
+                          fontSize: "0.7rem"
+                        }}
+                      >
+                        CRITICAL
+                      </span>
+                      {attack}
+                    </li>
                   ))}
                 </ul>
-              </>
+              </div>
             )}
 
-            {/* Investigation Workflow */}
+            {/* Workflow */}
             {project.investigationWorkflow && (
-              <>
-                <h4 style={{ marginTop: "1rem", color: "#22c55e" }}>
+              <div>
+                <h4 style={{ color: "#22c55e" }}>
                   Investigation Workflow
                 </h4>
-                <ul>
+                <ul style={{ paddingLeft: "1rem" }}>
                   {project.investigationWorkflow.map((step, i) => (
-                    <li key={i}>{step}</li>
+                    <li key={i}>➡️ {step}</li>
                   ))}
                 </ul>
-              </>
+              </div>
             )}
 
             {/* Vulnerabilities */}
             {project.vulnerabilities && (
-              <>
-                <h4 style={{ marginTop: "1rem", color: "#f97316" }}>
+              <div>
+                <h4 style={{ color: "#f97316" }}>
                   Vulnerabilities Identified
                 </h4>
-                <ul>
+                <ul style={{ paddingLeft: "1rem" }}>
                   {project.vulnerabilities.map((vuln, i) => (
-                    <li key={i}>{vuln}</li>
+                    <li key={i}>⚠️ {vuln}</li>
                   ))}
                 </ul>
-              </>
+              </div>
             )}
 
             {/* Highlights */}
             {project.highlights && (
-              <>
-                <h4 style={{ marginTop: "1rem", color: "#a855f7" }}>
-                  Highlights
-                </h4>
-                <ul>
+              <div>
+                <h4 style={{ color: "#a855f7" }}>Highlights</h4>
+                <ul style={{ paddingLeft: "1rem" }}>
                   {project.highlights.map((item, i) => (
-                    <li key={i}>{item}</li>
+                    <li key={i}>✔️ {item}</li>
                   ))}
                 </ul>
-              </>
+              </div>
             )}
-
           </div>
         ))}
       </div>
