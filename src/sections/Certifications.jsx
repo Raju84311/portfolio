@@ -2,38 +2,51 @@ import { portfolioData } from "../data/portfolioData";
 
 export default function Certifications() {
   return (
-    <section style={{ padding: "4rem 2rem" }}>
-      <h2 style={{ fontSize: "2rem", marginBottom: "2rem" }}>
+    <section
+      style={{
+        minHeight: "100vh",
+        padding: "8rem 2rem 4rem"
+      }}
+    >
+      <h2 style={{ fontSize: "2.3rem", marginBottom: "2rem" }}>
         Certifications
       </h2>
 
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
           gap: "2rem"
         }}
       >
         {portfolioData.certifications.map((cert, index) => (
           <div key={index} className="card">
 
-            <img
-              src={cert.image}
-              alt={cert.title}
-              style={{
-                width: "100%",
-                borderRadius: "8px",
-                marginBottom: "1rem"
-              }}
-            />
+            {/* Image */}
+            {cert.image && (
+              <img
+                src={`/portfolio/${cert.image}`}
+                alt={cert.title}
+                style={{
+                  width: "100%",
+                  borderRadius: "10px",
+                  marginBottom: "1rem"
+                }}
+              />
+            )}
 
+            {/* Title */}
             <h3>{cert.title}</h3>
 
-            <p>
+            {/* Issuer */}
+            <p style={{ opacity: 0.8 }}>
               <strong>Issuer:</strong> {cert.issuer}
             </p>
 
-            <p>{cert.description}</p>
+            {/* Description */}
+            <p style={{ marginTop: "0.5rem" }}>
+              {cert.description}
+            </p>
 
           </div>
         ))}

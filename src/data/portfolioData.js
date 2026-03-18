@@ -227,17 +227,32 @@ securityLabs: [
     }
   ],
 
-  certifications: [
-    "Tata Cybersecurity Analyst – Forage",
-    "Software Engineering Job Simulation – Forage",
-    "Generative AI Studio – Forage",
-    "Cisco Introduction to Cybersecurity",
-    "Certified Blockchain Security Examiner",
-    "Python Certification",
-    "Java Certification",
-    "SQL Certification – Simplilearn"
-  ],
-
+certifications: [
+  {
+    title: "Tata Cybersecurity Analyst Simulation",
+    issuer: "Forage",
+    image: "tata-cybersecurity.png",
+    description: "Completed cybersecurity analyst simulation focusing on IAM, risk analysis, and SOC workflows."
+  },
+  {
+    title: "JPMorgan Chase Cybersecurity Simulation",
+    issuer: "Forage",
+    image: "jpmorgan-simulation.png",
+    description: "Worked on real-world cybersecurity tasks including log analysis and threat detection."
+  },
+  {
+    title: "Cisco Introduction to Cybersecurity",
+    issuer: "Cisco",
+    image: "cybersecurity-workshop.png",
+    description: "Learned fundamentals of cybersecurity, threats, vulnerabilities, and protection mechanisms."
+  },
+  {
+    title: "Certified Blockchain Security Examiner",
+    issuer: "Blockchain Council",
+    image: "blockchain-security.png",
+    description: "Understood blockchain security concepts, threats, and protection strategies."
+  }
+],
   contact: {
     email: "rajusbnarasimha@gmail.com",
     phone: "8431190959"
