@@ -26,8 +26,7 @@ export default function CyberSecurityProjects() {
             style={{
               display: "flex",
               flexDirection: "column",
-              gap: "0.8rem",
-              justifyContent: "space-between"
+              gap: "0.8rem"
             }}
           >
             {/* Title */}
@@ -35,7 +34,7 @@ export default function CyberSecurityProjects() {
               {project.title}
             </h3>
 
-            {/* Tools Badge */}
+            {/* Tools */}
             <div
               style={{
                 fontSize: "0.8rem",
@@ -48,25 +47,24 @@ export default function CyberSecurityProjects() {
               {project.tools}
             </div>
 
-            {/* Image with SOC Badge */}
+            {/* Image FIXED for GitHub Pages */}
             {project.image && (
-              <div style={{ position: "relative" }}>
+              <div style={{ position: "relative", marginTop: "0.5rem" }}>
                 <img
-                  src={`/${project.image}`}
+                  src={`/portfolio/${project.image}`}   // ✅ FIXED
                   alt={project.title}
                   style={{
                     width: "100%",
-                    borderRadius: "10px",
-                    marginTop: "0.5rem"
+                    borderRadius: "10px"
                   }}
                 />
 
-                {/* LIVE ALERT badge */}
+                {/* LIVE ALERT badge FIXED */}
                 <span
                   style={{
                     position: "absolute",
                     top: "10px",
-                    left: "10px",
+                    right: "10px",
                     background: "#ef4444",
                     color: "white",
                     padding: "4px 8px",
@@ -74,7 +72,7 @@ export default function CyberSecurityProjects() {
                     fontSize: "0.7rem"
                   }}
                 >
-                  LIVE ALERTS
+                  LIVE ALERT
                 </span>
               </div>
             )}
@@ -98,27 +96,21 @@ export default function CyberSecurityProjects() {
               </div>
             )}
 
-            {/* Attacks Detected */}
+            {/* Attacks Detected FIXED */}
             {project.attacksDetected && (
               <div>
                 <h4 style={{ color: "#ef4444" }}>Attacks Detected</h4>
                 <ul style={{ paddingLeft: "1rem" }}>
                   {project.attacksDetected.map((attack, i) => (
-                    <li
-                      key={i}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "8px"
-                      }}
-                    >
+                    <li key={i}>
                       <span
                         style={{
                           background: "#ef4444",
                           color: "white",
-                          padding: "3px 8px",
-                          borderRadius: "6px",
-                          fontSize: "0.7rem"
+                          padding: "2px 6px",
+                          borderRadius: "4px",
+                          fontSize: "0.7rem",
+                          marginRight: "6px"
                         }}
                       >
                         CRITICAL
