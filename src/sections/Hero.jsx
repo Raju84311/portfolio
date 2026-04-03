@@ -80,7 +80,7 @@ export default function Hero() {
         </a>
 
         <a
-          href={hero.links.cyberResume}
+          href={hero.links.Resume}
           download
           className="btn btn-outline"
         >
